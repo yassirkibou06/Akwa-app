@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eaf406b1.css",
+    "main.js": "/static/js/main.cb0e83eb.js",
+    "static/media/104292032-1.jfif": "/static/media/104292032-1.0762f0bf96cc74792129.jfif",
+    "static/media/pexels-mart-production-7679725.jpg": "/static/media/pexels-mart-production-7679725.247c7be71c290099b573.jpg",
+    "static/media/YMjAQ7uqM2KezfpmougSEd.jpg": "/static/media/YMjAQ7uqM2KezfpmougSEd.af6938698201f9b41a8f.jpg",
+    "static/media/pexels-dmitriy-piskarev-12240546.jpg": "/static/media/pexels-dmitriy-piskarev-12240546.15efdb7de694a2334ea9.jpg",
+    "static/media/pexels-monstera-6311687.jpg": "/static/media/pexels-monstera-6311687.5186c88f432779600253.jpg",
+    "static/media/sp-pgm-dc-11.jpg": "/static/media/sp-pgm-dc-11.eb1c2ee891f0b1ea87d5.jpg",
+    "static/media/pexels-gustavo-fring-4005033.jpg": "/static/media/pexels-gustavo-fring-4005033.3dc4a16e9795a1cfacae.jpg",
+    "static/media/pexels-andrea-piacquadio-842811.jpg": "/static/media/pexels-andrea-piacquadio-842811.31ec30700323f62f07d8.jpg",
+    "static/media/7edc95f9-f2a0-4db3-9219-8b4e416fbe26.jfif": "/static/media/7edc95f9-f2a0-4db3-9219-8b4e416fbe26.fc6f08093047a78e7ecb.jfif",
+    "static/media/361894-31-2.jpg": "/static/media/361894-31-2.fb1f8aacb3ce3502a22e.jpg",
+    "static/media/8685326407_1_1_3.jpg": "/static/media/8685326407_1_1_3.e79f18c7f8d5d57d7692.jpg",
+    "static/media/Women---Cocktail-Dresses---Above-the-Knee.jfif": "/static/media/Women---Cocktail-Dresses---Above-the-Knee.e893156cec58c7d039ce.jfif",
+    "index.html": "/index.html",
+    "main.eaf406b1.css.map": "/static/css/main.eaf406b1.css.map",
+    "main.cb0e83eb.js.map": "/static/js/main.cb0e83eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaf406b1.css",
+    "static/js/main.cb0e83eb.js"
+  ]
+}

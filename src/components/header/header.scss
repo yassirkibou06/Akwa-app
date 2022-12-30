@@ -1,0 +1,87 @@
+@use '../../scss/' as *;
+
+.first-section {
+    @include flex(center, space-between);
+}
+
+.navbar {
+    @include flex(center, flex-start);
+
+    .logo {
+        font-weight: 300;
+        font-size: 28px;
+        letter-spacing: 0.5em;
+
+        @include mobile {
+            font-size: 22px;
+        }
+    }
+
+    &__content {
+        @include flex(center, unset);
+
+        padding-top: 12px;
+        padding-left: 30%;
+
+        @include tablet {
+            padding-left: 22%;
+            padding-top: 10px;
+        }
+
+        @include mobile {
+            padding-left: 12%;
+            padding-top: 5px;
+        }
+
+        &>*~* {
+            margin-left: 5rem;
+
+            @include mobile {
+                margin-left: 2rem;
+            }
+        }
+
+        li {
+            font-weight: 500;
+            font-size: 16px;
+
+            @include mobile {
+                font-size: 11px;
+            }
+        }
+
+        a.active {
+            color: $main-color;
+        }
+        .shopCart a span {
+            @include flex(center,center);
+
+            background-color: $main-color;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            padding: 9px;
+            color: $body-bg;
+            font-weight: 500;
+            font-size: 11px;
+        }
+    }
+}
+
+
+
+/*
+
+{
+                            headerNav.map((e, i) => (
+                                <li key={i} className={`${i === active ? 'active' : ""}`} >
+                                    <Link to={e.path}>
+                                        {e.display}
+                                    </Link>
+                                </li>
+                            ))
+                        }
+
+
+
+*/

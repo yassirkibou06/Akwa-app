@@ -1,0 +1,9 @@
+@forward  './variables';
+@forward  './mixin';
+@forward  './breackpnt';
+// sass
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+

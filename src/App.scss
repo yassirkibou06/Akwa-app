@@ -1,0 +1,101 @@
+@use './scss/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap');
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ebe8e8; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(122, 118, 118, 0.459);
+  border-radius: 50px;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: $font-family;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $body-bg;
+  color: $text-color;
+}
+@media (hover: hover) {
+  a:not(.linkCard):hover {
+    color: $main-color;
+  }
+}
+
+button,
+input {
+  outline: 0;
+}
+
+ul {
+  list-style-type: none;
+  color: $text-color;
+}
+a {
+  color: unset;
+}
+img {
+  max-width: 100%;
+}
+.mx {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.container {
+  max-width: 1660px;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+useEffect(() => {
+    async function fetchData() {
+      const response = await fetchApi(`${baseUrl}/${Product.productsList}?country=us&lang=en&currentpage=0&pagesize=20&categories=${categories.menAll}`)
+      setItems(response.results.slice(0,8))
+      console.log(response.results)
+      return response;
+    }
+    fetchData()
+  }, []);
+*/

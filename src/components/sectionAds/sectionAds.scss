@@ -1,0 +1,34 @@
+@use '../../scss/' as *;
+
+.contentAds {
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        
+        @include firstOverlay;
+    }
+
+    h2 {
+    position: absolute;
+    font-weight: 500;
+    font-size: 40px;
+    left: 20%;
+    top: 30%;
+    color: $body-bg;
+
+    span {
+        color: $main-color;
+        font-weight: 600;
+    }
+}
+}

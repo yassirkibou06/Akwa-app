@@ -1,0 +1,15 @@
+@use '../../scss/' as *;
+
+.shoesContent {
+.swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: $text-color;
+        background-size: 20px;
+
+        &::after {
+            font-size: 34px;
+        }
+    }
+}
+}
