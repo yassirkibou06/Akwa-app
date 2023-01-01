@@ -29,7 +29,7 @@ const ShoesSec = () => {
                     `/products/list/${location.pathname === "/men" ? Gender.men : ""}/shoes`
                 );
                 setItems(response.data.slice(0, 12));
-                ///console.log(types)
+                console.log(response.data)
             } catch (err) {
                 console.log(err)
             }
