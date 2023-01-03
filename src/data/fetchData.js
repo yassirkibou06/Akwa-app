@@ -1,6 +1,6 @@
 export const Gender = {
-    men: 'mens',
-    women: 'womens'
+    men: 'men',
+    women: 'women'
 }
 
 //// categories for categorie section (CateSec) ///
@@ -10,54 +10,66 @@ export const categories = [
         men: [
             {
                 id: 1,
-                cate: 'mens',
+                cate: 'men',
                 name: 'jackets',
                 image: require("../images/7edc95f9-f2a0-4db3-9219-8b4e416fbe26.jfif")
             },
             {
                 id: 2,
-                cate: 'mens',
+                cate: 'men',
                 name: 'shorts',
                 image: require('../images/361894-31-2.jpg')
             },
             {
                 id: 3,
-                cate: 'mens',
+                cate: 'men',
                 name: 'pants',
                 image: require('../images/sp-pgm-dc-11.jpg')
             },
             {
                 id: 4,
-                cate: 'mens',
+                cate: 'men',
                 name: 'jeans',
                 image: require('../images/8685326407_1_1_3.jpg')
             },
+            {
+                id: 5,
+                cate: 'men',
+                name: 'All',
+                image: require('../images/pexels-kai-pilger-996329.jpg')
+            }
         ],
         women: [
             {
                 id: 1,
-                cate: 'womens',
+                cate: 'women',
                 name: 'jackets',
                 image: require("../images/104292032-1.jfif")
             },
             {
                 id: 2,
-                cate: 'womens',
+                cate: 'women',
                 name: 'dresses',
                 image: require('../images/Women---Cocktail-Dresses---Above-the-Knee.jfif')
             },
             {
                 id: 3,
-                cate: 'womens',
+                cate: 'women',
                 name: 'pants',
                 image: require('../images/YMjAQ7uqM2KezfpmougSEd.jpg')
             },
             {
                 id: 4,
-                cate: 'womens',
+                cate: 'women',
                 name: 'jeans',
                 image: require('../images/8685326407_1_1_3.jpg')
             },
+            {
+                id: 5,
+                cate: 'women',
+                name: 'clothing',
+                image: require('../images/pexels-kai-pilger-996329.jpg')
+            }
         ]
        }
 ]

@@ -14,9 +14,9 @@ const ListSection = () => {
         const getData = async () => {
             try {
                 const response = await axios.get(
-                    `/products/list/${location.pathname === "/men" ? Gender.men : ""}/bestsellers`
+                    `/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/bestsellers`
                 );
-                setTypes(response.data.slice(0, 6));
+                setTypes(response.data.slice(0, 9));
                 ///console.log(types)
             } catch (err) {
                 console.log(err)

@@ -7,7 +7,7 @@ const CateSec = () => {
   const location = useLocation();
 
   return (
-    <div className='grid grid-cols-4 justify-items-center'>
+    <div className='grid grid-cols-5 justify-items-center'>
       {categories.map((item) => (
         <>
           {location.pathname === '/men' ? item.men.map((e) => (

@@ -26,10 +26,9 @@ const ShoesSec = () => {
         const getData = async () => {
             try {
                 const response = await axios.get(
-                    `/products/list/${location.pathname === "/men" ? Gender.men : ""}/shoes`
+                    `/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/shoes`
                 );
-                setItems(response.data.slice(0, 12));
-                console.log(response.data)
+                setItems(response.data.slice(0, 13));
             } catch (err) {
                 console.log(err)
             }
