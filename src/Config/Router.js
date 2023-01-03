@@ -11,7 +11,7 @@ import Women from '../pages/Women';
 const Router = () => {
     return (
         <Routes>
-            <Route path="/" element={ <Navigate to="/men" /> } />
+            <Route path="/*" element={ <Navigate to="/men" /> } />
             <Route
                 path='/men'
                 element={<Men />}
