@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Gender } from '../../data/fetchData';
 import Card from '../card/Card';
 import { useLocation } from 'react-router-dom';
+import { URL } from '../../App';
 
 const ListSection = () => {
     const [types, setTypes] = useState([]);
@@ -14,7 +15,7 @@ const ListSection = () => {
         const getData = async () => {
             try {
                 const response = await axios.get(
-                    `/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/bestsellers`
+                    `${URL}/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/bestsellers`
                 );
                 setTypes(response.data.slice(0, 9));
                 ///console.log(types)

@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
 import Card from '../card/Card';
+import { URL } from '../../App';
 
 const ShoesSec = () => {
     const [items, setItems] = useState([]);
@@ -26,7 +27,7 @@ const ShoesSec = () => {
         const getData = async () => {
             try {
                 const response = await axios.get(
-                    `/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/shoes`
+                    `${URL}/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/shoes`
                 );
                 setItems(response.data.slice(0, 13));
             } catch (err) {

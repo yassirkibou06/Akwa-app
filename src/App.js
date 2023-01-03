@@ -5,6 +5,8 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Router from './Config/Router';
 
+export const URL = process.env.REACT_APP_BACKEND_URL;
+
 function App() {
   return (
     <>
