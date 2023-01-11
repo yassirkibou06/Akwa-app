@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React,{ useState,useEffect } from 'react'
 import axios from 'axios';
-import { Gender } from '../../data/fetchData';
-import './shoesSec.scss'
-
+import { URL } from '../../App';
+import Card from '../card/Card';
+import './similar.scss'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,20 +13,15 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper";
-import Card from '../card/Card';
-import { URL } from '../../App';
 
-const ShoesSec = () => {
+const Similar = () => {
     const [items, setItems] = useState([]);
-
-    const location = useLocation();
-
 
     useEffect(() => {
         const getData = async () => {
             try {
                 const response = await axios.get(
-                    `${URL}/products/list/${location.pathname === "/men" ? Gender.men : Gender.women}/shoes`
+                    `${URL}/products/list/men/bestsellers`
                 );
                 setItems(response.data.slice(0,13));
             } catch (err) {
@@ -35,12 +29,11 @@ const ShoesSec = () => {
             }
         };
         getData();
-    }, [location]);
+    }, []);
+
     return (
-        <div className='shoesContent my-10 mx-[50px]'>
-            {location.pathname === '/men'
-                ? <h1 className='text-center font-semibold text-3xl md:text-4xl tracking-[11px] md:tracking-[20px] my-14'>Men's Shoes</h1>
-                : <h1 className='text-center font-semibold text-3xl md:text-4xl tracking-[11px] md:tracking-[20px] my-14'>Women's Shoes</h1>}
+        <div className=' mx-[50px] my-8'>
+            <h1 className='font-semibold text-lg md:text-2xl tracking-[8px] md:tracking-[17px] mb-9'>You May Also Like</h1>
             <>
                 <Swiper
                     slidesPerView={3}
@@ -80,4 +73,5 @@ const ShoesSec = () => {
     )
 }
 
-export default ShoesSec;
+
+export default Similar

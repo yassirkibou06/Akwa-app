@@ -35,7 +35,7 @@ export const categories = [
             {
                 id: 5,
                 cate: 'men',
-                name: 'All',
+                name: 'clothing',
                 image: require('../images/pexels-kai-pilger-996329.jpg')
             }
         ],

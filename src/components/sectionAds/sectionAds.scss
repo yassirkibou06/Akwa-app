@@ -21,10 +21,23 @@
     h2 {
     position: absolute;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 38px;
     left: 20%;
     top: 30%;
     color: $body-bg;
+
+    @include tablet {
+        width: 84%;
+        top: 32%;
+        left: 8%;
+        text-align: center;
+    }
+    @include mobile {
+        font-size: 30px;
+        width: 84%;
+        top: 32%;
+        left: 10%;
+    }
 
     span {
         color: $main-color;

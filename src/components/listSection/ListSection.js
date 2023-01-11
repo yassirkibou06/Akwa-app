@@ -10,7 +10,6 @@ const ListSection = () => {
 
     const location = useLocation();
 
-
     useEffect(() => {
         const getData = async () => {
             try {
@@ -29,7 +28,7 @@ const ListSection = () => {
     return (
         <>
             <div className='list-content'>
-                <h1 className='text-center font-semibold text-4xl tracking-[20px] my-14'>BEST BUYS</h1>
+                <h1 className='text-center font-semibold text-3xl md:text-4xl tracking-[14px] md:tracking-[20px] my-14'>BEST BUYS</h1>
                 <div className='grid grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                     {types.map((el, i) => (
                         <Card el={el} key={i} />

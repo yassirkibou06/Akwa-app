@@ -1,0 +1,158 @@
+@use '../../scss/' as *;
+
+.filterBtn {
+    display: none;
+
+    @include mobile {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+}
+
+.fullPage {
+    display: flex;
+    gap: 150px;
+    margin-bottom: 50px;
+
+    @include mobile {
+        display: block;
+    }
+
+    /* FOR MOBILE */
+    .show {
+        display: block;
+    margin-bottom: 15px;
+    z-index: 5;
+    background: white;
+    width: 100%;
+
+    .filterItem {
+        h2 {
+            font-weight: 600;
+            font-size: 16px;
+            margin: 11px 0px;
+        }
+
+        .inputItem {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px;
+            cursor: pointer;
+
+            input[type= radio] {
+                background-color: #fff;
+                margin: 0;
+                font: inherit;
+                color: currentColor;
+                width: 1.15em;
+                height: 1.15em;
+                border: 0.15em solid currentColor;
+                border-radius: 0.15em;
+                transform: translateY(-0.075em);
+            }
+
+            input[type= radio]:checked {
+                transform: scale(1);
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+/* FOR WEB */
+.left {
+
+    @include mobile {
+      display: none;
+    }
+    
+
+    .filterItem {
+        h2 {
+            font-weight: 600;
+            font-size: 16px;
+            margin: 11px 0px;
+        }
+
+        .inputItem {
+            display: flex;
+            align-items: center;
+            padding: 5px 0px;
+
+            input[type= radio] {
+                background-color: #fff;
+                margin: 0;
+                font: inherit;
+                color: currentColor;
+                width: 1.15em;
+                height: 1.15em;
+                border: 0.15em solid currentColor;
+                border-radius: 0.15em;
+                transform: translateY(-0.075em);
+            }
+
+        input[type= radio]:checked {
+            transform: scale(1);
+        }
+
+            label {
+                font-weight: 500;
+                font-size: 14px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+    
+    .right {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+
+        @include tablet {
+            grid-template-columns: repeat(2,1fr);
+            gap: 35px;
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(2,1fr);
+            gap: 35px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cardList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 14px;
+            }
+            h4 {
+                font-size: 14px;
+            }
+
+        .imageList {
+            height: 330px;
+            width: 75%;
+
+           @include mobile {
+                height: 250px;
+                width: 100%;
+            }
+        }
+
+    }
+    }
+}

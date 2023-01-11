@@ -71,31 +71,3 @@ img {
   max-width: 1660px;
   margin: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-useEffect(() => {
-    async function fetchData() {
-      const response = await fetchApi(`${baseUrl}/${Product.productsList}?country=us&lang=en&currentpage=0&pagesize=20&categories=${categories.menAll}`)
-      setItems(response.results.slice(0,8))
-      console.log(response.results)
-      return response;
-    }
-    fetchData()
-  }, []);
-*/

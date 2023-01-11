@@ -6,13 +6,12 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 import "./heroSlide.scss";
-
 // import required modules
 import { Pagination } from "swiper";
 import { Link, useLocation } from "react-router-dom";
 import { dataSlide } from "../../data/fetchData";
 
-///hero slide for men
+///hero slide
 const HeroSlider = () => {
     const location = useLocation();
 

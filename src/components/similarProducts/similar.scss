@@ -1,6 +1,5 @@
 @use '../../scss/' as *;
 
-.shoesContent {
 .swiper {
     .swiper-button-prev,
     .swiper-button-next {
@@ -13,9 +12,8 @@
     }
 
     @include mobile {
-        .imgForShoes {
+        .imageForSim {
             display: contents;
         }
     }
-}
 }

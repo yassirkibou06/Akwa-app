@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { MdOutlineShoppingBag } from 'react-icons/md'
+import { MdOutlineShoppingBag,MdFavoriteBorder } from 'react-icons/md'
 import './header.scss';
+import Cart from '../shopCart/Cart';
+import Favorite from '../favorite/Favorite';
+import { useSelector } from 'react-redux';
 
 
 
 const Header = () => {
+    const [openCart,setOpenCart] = useState(false);
+    const [openFav,setOpenFav] = useState(false);
+    const products = useSelector(state => state.cart.products);
+    const productsFav = useSelector(state => state.favoriteCart.productsFav);
+
     return (
         <div className='mx' >
             <div className='first-section py-2 md:py-3 font-bold text-[9px] md:text-xs'>
@@ -23,11 +31,14 @@ const Header = () => {
                         <li>
                             <NavLink to='/women'>Women</NavLink>
                         </li>
-                        <div className='shopCart absolute right-0'>
-                            <NavLink to='/shopCart'><MdOutlineShoppingBag size={22}/><span className='absolute -top-2 -right-2'>0</span></NavLink>
+                        <div className='shopCart flex items-center absolute right-0'>
+                            <div className="CartNav pr-4 md:pr-6" onClick={() => setOpenFav(!openFav)} ><MdFavoriteBorder size={22} /><span className='absolute -top-2 right-7 md:right-9'>{productsFav.length}</span></div>
+                            <div className='CartNav' onClick={() => setOpenCart(!openCart)}><MdOutlineShoppingBag size={22}/><span className='absolute -top-2 -right-2'>{products.length}</span></div>
                         </div>
                     </ul>
             </div>
+            {openCart && <Cart />}
+            {openFav && <Favorite />}
         </div>
     )
 }

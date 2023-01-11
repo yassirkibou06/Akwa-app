@@ -53,7 +53,7 @@
         a.active {
             color: $main-color;
         }
-        .shopCart a span {
+        .shopCart div span {
             @include flex(center,center);
 
             background-color: $main-color;
@@ -65,23 +65,12 @@
             font-weight: 500;
             font-size: 11px;
         }
+        .CartNav {
+            cursor: pointer;
+
+            &:hover {
+                color: $main-color
+            }
+        }
     }
 }
-
-
-
-/*
-
-{
-                            headerNav.map((e, i) => (
-                                <li key={i} className={`${i === active ? 'active' : ""}`} >
-                                    <Link to={e.path}>
-                                        {e.display}
-                                    </Link>
-                                </li>
-                            ))
-                        }
-
-
-
-*/
