@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { Link, NavLink,useLocation } from 'react-router-dom';
 import { MdOutlineShoppingBag,MdFavoriteBorder } from 'react-icons/md'
-import './header.scss';
-import Cart from '../cartBox/Cart';
+import './header.scss'
 import Favorite from '../favorite/Favorite';
 import { useSelector } from 'react-redux';
 
 
 
 const Header = () => {
-    //const [openCart,setOpenCart] = useState(false);
     const [openFav,setOpenFav] = useState(false);
     const products = useSelector(state => state.cart.products);
     const productsFav = useSelector(state => state.favoriteCart.productsFav);
@@ -42,7 +40,5 @@ const Header = () => {
         </div>
     )
 }
-//shopCart
-//{openCart && <Cart />}
 
 export default Header;

@@ -5,8 +5,7 @@ import { useSelector } from "react-redux"
 
 const CartPage = () => {
     const products = useSelector(state => state.cart.products);
-    //const item = products.find(item => item.quantity)
-
+    
     const totalPrice = () => {
         let total = 0;
         products.forEach((item) => { total += item.quantity * item.price?.slice(1) });
