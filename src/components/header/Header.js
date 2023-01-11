@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink,useLocation } from 'react-router-dom';
 import { MdOutlineShoppingBag,MdFavoriteBorder } from 'react-icons/md'
 import './header.scss';
-import Cart from '../shopCart/Cart';
+import Cart from '../cartBox/Cart';
 import Favorite from '../favorite/Favorite';
 import { useSelector } from 'react-redux';
 
 
 
 const Header = () => {
-    const [openCart,setOpenCart] = useState(false);
+    //const [openCart,setOpenCart] = useState(false);
     const [openFav,setOpenFav] = useState(false);
     const products = useSelector(state => state.cart.products);
     const productsFav = useSelector(state => state.favoriteCart.productsFav);
+    const location = useLocation()
 
     return (
         <div className='mx' >
@@ -32,15 +33,16 @@ const Header = () => {
                             <NavLink to='/women'>Women</NavLink>
                         </li>
                         <div className='shopCart flex items-center absolute right-0'>
-                            <div className="CartNav pr-4 md:pr-6" onClick={() => setOpenFav(!openFav)} ><MdFavoriteBorder size={22} /><span className='absolute -top-2 right-7 md:right-9'>{productsFav.length}</span></div>
-                            <div className='CartNav' onClick={() => setOpenCart(!openCart)}><MdOutlineShoppingBag size={22}/><span className='absolute -top-2 -right-2'>{products.length}</span></div>
+                            <div className="CartNav pr-4 md:pr-6" onClick={() => setOpenFav(!openFav)}><MdFavoriteBorder size={22} /><span className='absolute -top-2 right-7 md:right-9'>{productsFav.length}</span></div>
+                            <Link to={location.pathname === "/men" ? "/men/shopCart" : "/women/shopCart"} className='CartNav' ><MdOutlineShoppingBag size={22}/><span className='absolute -top-2 -right-2'>{products.length}</span></Link>
                         </div>
                     </ul>
             </div>
-            {openCart && <Cart />}
             {openFav && <Favorite />}
         </div>
     )
 }
+//shopCart
+//{openCart && <Cart />}
 
 export default Header;

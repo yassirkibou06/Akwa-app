@@ -57,7 +57,8 @@
         a.active {
             color: $main-color;
         }
-        .shopCart div span {
+        .shopCart div span,
+        a span {
             @include flex(center,center);
 
             background-color: $main-color;

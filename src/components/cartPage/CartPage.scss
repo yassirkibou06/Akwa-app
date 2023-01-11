@@ -1,0 +1,45 @@
+@use "../../scss/" as *;
+
+.cartPage {
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .titleContent {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            h1 {
+                color: black;
+                font-weight: 600;
+                font-size: 25px;
+
+                @include mobile {
+                    font-size: 15px;
+                }
+            }
+
+            span {
+                font-weight: 400;
+                color: gray;
+                font-size: 13px;
+
+                @include mobile {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .total {
+            font-weight: 600;
+            font-size: 17px;
+
+            @include mobile {
+                font-size: 12px;
+            }
+        }
+    }
+}
