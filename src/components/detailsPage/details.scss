@@ -146,6 +146,9 @@
                     @include mobile {
                         padding: 8px 26px;
                     }
+                    @include mobileSm {
+                        padding: 8px 24px;
+                    }
                 }
 
                 input[type="radio"]:checked+label {
@@ -192,7 +195,7 @@
                         padding: 10px 90px;
                     }
                     @include mobileSm {
-                        padding: 10px 84px;
+                        padding: 10px 79px;
                     }
 
                     &:hover {

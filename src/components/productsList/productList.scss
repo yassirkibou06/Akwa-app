@@ -128,7 +128,7 @@
 
         @include mobileSm {
             grid-template-columns: repeat(2,1fr);
-            gap: 25px;
+            gap: 12px;
         }
 
         h1 {
