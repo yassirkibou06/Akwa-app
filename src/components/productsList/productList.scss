@@ -126,6 +126,11 @@
             gap: 35px;
         }
 
+        @include mobileSm {
+            grid-template-columns: repeat(2,1fr);
+            gap: 25px;
+        }
+
         h1 {
             text-align: center;
         }

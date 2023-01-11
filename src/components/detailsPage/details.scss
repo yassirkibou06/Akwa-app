@@ -57,6 +57,12 @@
                     position: absolute;
                     top: 150px;
                 }
+                @include mobileSm {
+                    display: block;
+                    position: absolute;
+                    top: 150px;
+                    width: 85%;
+                }
             }
             .hideSm {
                 display: none;
@@ -66,6 +72,13 @@
                     position: absolute;
                     z-index: 2;
                     top: 150px;
+                }
+                @include mobileSm {
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    top: 150px;
+                    width: 85%;
                 }
             }
         }
@@ -176,7 +189,10 @@
                     transition: .2s ease-out;
 
                     @include mobile {
-                        padding: 10px 98px;
+                        padding: 10px 90px;
+                    }
+                    @include mobileSm {
+                        padding: 10px 84px;
                     }
 
                     &:hover {

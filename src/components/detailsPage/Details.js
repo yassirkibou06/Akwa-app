@@ -46,7 +46,7 @@ const Details = () => {
     return (
         <div className='detail mx mb-40'>
             <div className='left'>
-                <div className='images cursor-pointer'>
+                <div className='images cursor-pointer'>id
                     <img id='first' src={data.imageUrl} onClick={() => setOpenImg(1)} alt='' />
                     <img id='second' src={data.imageSecond} onClick={() => setOpenImg(0)} alt='' />
                 </div>

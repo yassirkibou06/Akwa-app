@@ -14,8 +14,12 @@
 
     @include mobile {
       top: 70px;
-      width: 72%;
+      width: 75%;
     }
+
+    @include mobileSm {
+      width: 81%;
+  }
   
     h1 {
       margin-bottom: 25px;

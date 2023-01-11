@@ -32,8 +32,8 @@ const Similar = () => {
     }, []);
 
     return (
-        <div className=' mx-[50px] my-8'>
-            <h1 className='font-semibold text-lg md:text-2xl tracking-[8px] md:tracking-[17px] mb-9'>You May Also Like</h1>
+        <div className=' mx-[40px] my-8'>
+            <h1 className='font-semibold text-lg md:text-2xl tracking-[6px] md:tracking-[17px] mb-9'>You May Also Like</h1>
             <>
                 <Swiper
                     slidesPerView={3}

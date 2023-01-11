@@ -12,13 +12,13 @@ const CateSec = () => {
         <>
           {location.pathname === '/men' ? item.men.map((e) => (
             <Link to={`/${e.cate}/${e.name}`} className='grid justify-items-center'>
-              <div key={e.id} className='w-14 h-14 md:w-20 md:h-20  rounded-full drop-shadow-md' style={{ backgroundImage: `url("${e.image}")`, backgroundSize: 'cover' }}></div>
+              <div key={e.id} className='w-12 h-12 md:w-20 md:h-20  rounded-full drop-shadow-md' style={{ backgroundImage: `url("${e.image}")`, backgroundSize: 'cover' }}></div>
               <h2 className='font-medium text-[12px] md:text-[15px] uppercase pt-3'>{e.name}</h2>
             </Link>
           )) : item.women.map((e) => (
             <Link to={`/${e.cate}/${e.name}`} className='grid justify-items-center'>
-              <div key={e.id} className='w-14 h-14 md:w-20 md:h-20  rounded-full drop-shadow-md' style={{ backgroundImage: `url("${e.image}")`, backgroundSize: 'cover' }}></div>
-              <h2 className='font-medium text-[15px] uppercase pt-3'>{e.name}</h2>
+              <div key={e.id} className='w-12 h-12 md:w-20 md:h-20  rounded-full drop-shadow-md' style={{ backgroundImage: `url("${e.image}")`, backgroundSize: 'cover' }}></div>
+              <h2 className='font-medium text-[12px] md:text-[15px] uppercase pt-3'>{e.name}</h2>
             </Link>
           ))}
         </>

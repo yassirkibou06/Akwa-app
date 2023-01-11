@@ -16,13 +16,19 @@
 
         @include tablet {
             background-size: cover;
-            min-height: 40vh;
+            min-height: 41vh;
         }
 
         @include mobile {
             background-position: 52%;
             background-size: cover;
-            min-height: 40vh;
+            min-height: 42vh;
+        }
+
+        @include mobileSm {
+            background-position: 52%;
+            background-size: cover;
+            min-height: 47vh;
         }
 
         .content {
